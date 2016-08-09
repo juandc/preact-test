@@ -2,7 +2,7 @@
   "name": "juandc.github.io",
   "version": "1.0.0",
   "description": "Mi personal Page",
-  "main": "index.js",
+  "main": "gulp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/juandc/juandc.github.io.git"
   },
+  "devDependencies": [
+    "gulp",
+    "gulp-rename",
+    "gulp-stylus",
+    "nib"
+  ],
   "keywords": [
     "juandc",
     "fjuandc",

@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="shortcut icon", type="image/x-icon", href="public/img/favicon.png")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+    link(rel="stylesheet", href="/public/styles/style.min.css")
+    title Juan David Castro | Home
+  body
+    nav.menu
+      .container
+        figure.img-logo
+          //- img(src="public/img/favicon.png", alt="JUANDC")
+          h2 Juan David Castro
+        ul#menu.menu-list
+          a
+            li Home
+          a
+            li About
+          a
+            li Portafolio
+        .menu-ham
+          i#burguer-button.fa.fa-times.fa-bars
+
+    header.header
+      .container
+        h2.special-title Frontend developer
+      .container
+        h2.special-title.special-title-2= '<Code>'
+        .content
+          p HTML, CSS, JavaScript, Vuejs, jQuery, PUG  y Stylus
+      .container
+        h2.special-title.special-title-3 Design
+        .content
+          p Coming soon
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js")
+    script(src="/public/src/styles.js")
