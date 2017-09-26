@@ -1,32 +1,30 @@
 {
   "name": "juandc.github.io",
-  "version": "1.0.0",
-  "description": "Mi personal Page",
-  "main": "gulp.js",
+  "version": "0.1.0",
+  "description": "my personal page",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development webpack-dev-server --inline",
+    "clean": "rm index.html bundle.* && rm -rf icons build",
+    "mess": "cp -r ./public/* ./",
+    "build": "yarn mess && NODE_ENV=production webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/juandc/juandc.github.io.git"
-  },
-  "devDependencies": [
-    "gulp",
-    "gulp-rename",
-    "gulp-stylus",
-    "nib"
-  ],
-  "keywords": [
-    "juandc",
-    "fjuandc",
-    "platzi",
-    "github",
-    "github-pages"
-  ],
-  "author": "@juandc",
+  "repository": "git@github.com:juandc/juandc.github.io.git",
+  "author": "Juan David Castro <me@juandc.co>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/juandc/juandc.github.io/issues"
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "decss-loader": "^0.2.0",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   },
-  "homepage": "https://github.com/juandc/juandc.github.io#readme"
+  "dependencies": {
+    "preact": "^8.2.5"
+  }
 }

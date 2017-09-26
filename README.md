@@ -1,2 +1,2 @@
-# juandc.github.io
-MI personal page
+# juandc.github.io === juandc.co 🎉
+My personal page

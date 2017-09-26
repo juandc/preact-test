@@ -1,0 +1,11 @@
+{
+	"plugins": [
+		["transform-react-jsx", { pragma: 'h' }]
+	],
+	"presets": [
+		[
+			"env",
+			{ "targets": { "browsers": "> 5%" } }
+		]
+	]
+}
