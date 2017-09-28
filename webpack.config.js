@@ -11,7 +11,7 @@ module.exports = function (source) {
 		// input
 		entry: './main.js',
 
-		// input
+		// output
 		output: {
 			path: path.join(__dirname, outputLocation),
 			filename: 'bundle.js'
@@ -33,7 +33,6 @@ module.exports = function (source) {
 							loader: "css-loader",
 							options: { modules: true, importLoaders: 1, localIdentName: '[local]-[hash:base64:5]' }
 						},
-				    // "postcss-loader"
 					]
 				}
 			],
@@ -42,7 +41,7 @@ module.exports = function (source) {
 		// sourcemaps
 		devtool: devtool,
 
-		// server
+		// Server (development)
 		devServer: {
 			contentBase: path.join(__dirname, 'public'),
 			compress: true,

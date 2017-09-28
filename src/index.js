@@ -1,16 +1,10 @@
 import { h, Component } from 'preact'
-import { Menu, Content, Footer } from './index.css'
+import { Menu, Content } from './index.css'
 
 
 const Theme = {
-	light: {
-		name: 'light',
-		icons: ''
-	},
-	dark: {
-		name: 'dark',
-		icons: '-light'
-	}
+	light: { name: 'light', icons: '' },
+	dark: { name: 'dark', icons: '-light' }
 }
 
 
@@ -23,7 +17,6 @@ export default class App extends Component {
 				name: localStorage.themeName || Theme.light.name,
 				icons: localStorage.themeIcons || Theme.light.icons,
 			}
-			// theme: localStorage.themeName || Theme.light
 		}
 	}
 
@@ -50,6 +43,7 @@ export default class App extends Component {
 						<h1>Juan David Castro</h1>
 						<h2>Frontend Developer at <strong><a href="https://blackome.co" target="_blank">Blackome</a></strong>
 						<br/> and <strong><a href="https://softy365.com" target="_blank">Softy365</a></strong></h2>
+
 						<div class="icons">
 							<a href="https://medium.com/@fjuandc" target="_blank">
 								<img src={`./icons/medium${theme.icons}.svg`} alt="medium" />
@@ -66,35 +60,7 @@ export default class App extends Component {
 						</div>
 					</div>
 				</Content>
-				{/*<Footer>Footer</Footer>*/}
 			</main>
 		)
 	}
 }
-
-// export default function App () {
-// 	return (
-// 		<main role="application">
-// 			<Menu tag="nav">
-// 				<h2>juandc.co</h2>
-// 				<ul>
-// 					<span>Light</span>
-// 				</ul>
-// 			</Menu>
-// 			<Content>
-// 				<div class="above">
-// 					<h1>Juan David Castro</h1>
-// 					<h2>Frontend Developer at <strong>Blackome</strong>
-// 					<br/> and <strong>Softy365</strong></h2>
-// 					<div class="icons">
-// 						<img src="/icons/medium.svg" alt="medium" />
-// 						<img src="/icons/youtube.svg" alt="twitter" />
-// 						<img src="/icons/twitter.svg" alt="twitter" />
-// 						<img src="/icons/github.svg" alt="twitter" />
-// 					</div>
-// 				</div>
-// 			</Content>
-// 			{/*<Footer>Footer</Footer>*/}
-// 		</main>
-// 	)
-// }

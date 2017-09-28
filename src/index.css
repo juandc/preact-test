@@ -69,18 +69,7 @@
 
 
 
-/* Footer */
-.Footer {
-	background-color: #fff;
-	box-shadow: 0 0 3px 0 rgba(109, 113, 117, .3);
-	height: 50px;
-	padding: 10px;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	right: 0;
-}
-
+/* Extras */
 @keyframes reel {
 	from { transform: scale(1) rotate(0); }
 	25% { transform: scale(1.5) rotate(3deg); }
