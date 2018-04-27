@@ -1,14 +1,3 @@
-# My personal page 🎉
-juandc.github.io === juandc.co *2.0*
+# Redesign
 
-
-## Setup
-For development:
-```bash
-yarn clean && yarn start
-```
-
-For production build
-```bash
-yarn build
-```
+![](https://github.com/juandc/juandc.github.io/blob/redesign/responsive-v1.png)
