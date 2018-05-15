@@ -2,17 +2,23 @@
 
 `juandc.github.io === juandc.co *2.0*`
 
-Design and development approach for Blogging and Portfolio.
-
-*Older versions are in the commit history, this is version 3.0.0
+ - [x] :tada: New Design
+ - [ ] :man: About me section
+ - [ ] :newspaper: Blog section
+ - [ ] :man_student: Courses section
+ - [ ] :thinking: External `assets` folder :question: 
 
 
 ## Design proposal
 
-UI Kit:
-![UI Kit](https://github.com/juandc/juandc.github.io/blob/master/ui_kit.png)
+<img
+  alt="UI Kit"
+  src="https://github.com/juandc/juandc.github.io/blob/master/ui_kit.png"
+  width="750px"
+/>
 
-Ultra small version: 
-![Ultra small version](https://github.com/juandc/juandc.github.io/blob/master/ultra_small.png)
-
-Any other, comming soon...
+<img
+  alt="Ultra small version"
+  src="https://github.com/juandc/juandc.github.io/blob/master/ultra_small.png"
+  width="750px"
+/>
